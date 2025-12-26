@@ -10,7 +10,7 @@ Se vuoi proporre una correzione, apri una **Issue** o una **Pull Request**.
 If you want to customize them, make a **local copy** or **fork** this repository and work on your own version.  
 If you want to suggest a fix, open an **Issue** or a **Pull Request**.
 
----
+***
 
 ## IT — Descrizione
 
@@ -42,26 +42,9 @@ Tip: apri un file su GitHub e clicca **Raw** per ottenere l’URL diretto.
 
 ## IT — Esempi rapidi
 
-Scaricare una lista in locale:
-
-curl -L -o plane-alert-gov-images.csv
-https://raw.githubusercontent.com/djrexishere91/df-adsb-lists/main/plane-alert-gov-images.csv
-
-
-
-Filtrare un HEX specifico:
-
-grep -i "^06A3D5," plane-alert-gov-images.csv
-
-
-
-Esempio “match” (pseudo‑codice):
-
-seen_hex = stream_adsb_hex()
-if seen_hex in csv_hex_list:
-send_alert(seen_hex, metadata, img_url)
-
-
+- Scaricare una lista in locale: `curl -L -o plane-alert-gov-images.csv https://raw.githubusercontent.com/djrexishere91/df-adsb-lists/main/plane-alert-gov-images.csv`
+- Filtrare un HEX specifico: `grep -i "^06A3D5," plane-alert-gov-images.csv`
+- Esempio “match” (pseudo‑codice): `se l'HEX visto è presente nel CSV → invia alert con metadati e img URL`
 
 ## IT — Formato CSV
 
@@ -92,7 +75,7 @@ Se un URL non è più valido, è normale: i siti possono modificare o rimuovere 
 
 Vedi `LICENSE` (MIT).
 
----
+***
 
 ## EN — Overview
 
@@ -124,26 +107,9 @@ Tip: open a file on GitHub and click **Raw** to get the direct URL.
 
 ## EN — Quick examples
 
-Download a list:
-
-curl -L -o plane-alert-gov-images.csv
-https://raw.githubusercontent.com/djrexishere91/df-adsb-lists/main/plane-alert-gov-images.csv
-
-text
-
-Filter by HEX:
-
-grep -i "^06A3D5," plane-alert-gov-images.csv
-
-
-
-Matching example (pseudo‑code):
-
-seen_hex = stream_adsb_hex()
-if seen_hex in csv_hex_list:
-send_alert(seen_hex, metadata, img_url)
-
-
+- Download a list: `curl -L -o plane-alert-gov-images.csv https://raw.githubusercontent.com/djrexishere91/df-adsb-lists/main/plane-alert-gov-images.csv`
+- Filter by HEX: `grep -i "^06A3D5," plane-alert-gov-images.csv`
+- Matching example (pseudo-code): `if seen HEX is in the CSV → send alert with metadata and image URL`
 
 ## EN — CSV format
 
